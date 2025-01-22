@@ -1,0 +1,44 @@
+# Ignore Python cache files and directories
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment files and virtual environments
+.env
+*.env
+venv/
+env/
+.idea/
+.vscode/
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore database files (if any)
+*.sqlite3
+*.db
+
+# Ignore compiled files
+*.py[cod]
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore uploads (if you don't want them in the repository)
+uploads/
+
+# Ignore configuration files with sensitive data
+config.py
+
+# Ignore test coverage reports
+htmlcov/
+.coverage
+*.cover
+
+# Ignore any secret files
+secrets.json
+
+# Ignore dependencies (optional if using requirements.txt)
+node_modules/
