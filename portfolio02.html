@@ -12,277 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
-    <!-- <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            scroll-behavior: smooth;
-            background-color: #0d1117;
-            color: #fff;
-        }
-
-        .section {
-            position: relative;
-            padding: 60px 0;
-            overflow: hidden;
-        }
-
-        .section video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
-            opacity: 0.4;
-        }
-
-        .hero-section {
-            height: auto; /* Reduced height for a compact look */
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            background: linear-gradient(to bottom, rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.8)), 
-            url('cover-photo.jpg') no-repeat center center/cover; /* Cover photo */ 
-            padding-top: 70px;
-            }
-
     
-
-
-        .hero-section img {
-    width: 150px;                /* Adjust the size */
-    height: 150px;               /* Make the height equal to the width */
-    border-radius: 50%;          /* Ensures the image becomes circular */
-    border: 4px solid #1f6feb;   /* Adds the border */
-    margin-bottom: 20px;
-    box-shadow: 0 8px 15px rgba(31, 111, 235, 0.3); /* Adds a soft shadow */
-    object-fit: cover;           /* Ensures the image fits inside the circle */
-    overflow: hidden;            /* Prevents overflow beyond the circle */
-}
-
-        .hero-section h1 {
-            font-size: 4rem;
-            animation: zoomIn 1s;
-        }
-
-        .hero-section p {
-            font-size: 1.5rem;
-            animation: fadeIn 2s;
-        }
-
-        .hero-section a {
-            margin-top: 20px;
-            animation: slideInUp 2.5s;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        @keyframes zoomIn {
-            0% { transform: scale(0.8); opacity: 0; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-
-        @keyframes slideInUp {
-            0% { transform: translateY(100px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
-        }
-
-        .fade-in-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 40px;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            width: 50px;
-            height: 5px;
-            background: #1f6feb;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .section.bg-dark {
-            background: linear-gradient(135deg, #1e1e1e, #272727);
-        }
-
-        .project-card {
-            background: #1f1f1f;
-            color: #fff;
-            border: none;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .project-card .card-body {
-            padding: 20px;
-        }
-     /* Pop-Up Overlay */
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
-    display: none; /* Hidden by default */
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    animation: fadeIn 0.3s ease;
-}
-
-/* Pop-Up Content */
-.popup-content {
-    background: rgba(255, 255, 255, 0.1); /* Transparent white for glass effect */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    padding: 30px;
-    border-radius: 15px;
-    color: white;
-    text-align: center;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Add a shadow for depth */
-    position: relative;
-    animation: slideIn 0.3s ease;
-}
-
-/* Title and Description Styling */
-.popup-content h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #1f6feb;
-}
-
-.popup-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-/* Project Image Inside Pop-Up */
-.popup-content img {
-    width: 100%;
-    max-width: 200px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-}
-
-/* Close Button */
-.popup-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #1f1f1f;
-    border: none;
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background 0.3s ease;
-}
-
-.popup-close:hover {
-    background: #f05454; /* Highlight on hover */
-}
-
-/* Button Style */
-.popup-content button {
-    background: #1f6feb;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.popup-content button:hover {
-    background: #f05454;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(-30px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.navbar {
-    transition: background-color 0.3s ease;
-}
-
-.navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.9); /* Darker navbar on scroll */
-}
-
-        footer {
-            background: #0d1117;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style> -->
 </head>
 <body>
     <!-- Navbar -->
@@ -325,10 +55,10 @@
     <!-- About Section -->
     <section class="section" id="about">
         <video autoplay muted loop>
-            <source src="./background/bbbb.mp4" type="video/mp4">
+            <source src="background-about.mp4" type="video/mp4">
         </video>
         <div class="container fade-in-section">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title  link-light">About Me</h2>
             <p>I am an experienced Full-Stack Developer with over 4 years of expertise, including 2 years in a startup environment. Skilled in Node.js, React.js, and building scalable RESTful APIs, I am passionate about delivering secure, maintainable, and high-performance solutions. My work is driven by innovation and a strong commitment to optimizing application performance in FinTech industries.</p>
         </div>
     </section>
@@ -336,10 +66,10 @@
     <!-- Experience Section -->
     <section class="section bg-dark" id="experience">
         <video autoplay muted loop>
-            <source src="./background/bbbb.mp4" type="video/mp4">
+            <source src="background-experience.mp4" type="video/mp4">
         </video>
         <div class="container fade-in-section">
-            <h2 class="section-title">Professional Experience</h2>
+            <h2 class="section-title link-light" >Professional Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <h4>Software Development Engineer (Backend)</h4>
@@ -369,7 +99,7 @@
             <source src="background-projects.mp4" type="video/mp4">
         </video>
         <div class="container fade-in-section">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title  link-light">Projects</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card project-card" onclick="openPopup('project1')">
@@ -453,7 +183,7 @@
             <source src="background-skills.mp4" type="video/mp4">
         </video>
         <div class="container fade-in-section">
-            <h2 class="section-title">Skills</h2>
+            <h2 class="section-title link-light">Skills</h2>
             <div class="row">
                 <div class="col-md-4">
                     <h4>Programming Languages</h4>
@@ -476,37 +206,20 @@
             </div>
         </div>
     </section>
-    <!-- Git HUB Section -->
-    <section class="section" id="github-activity" data-aos="fade-up">
-        <h2 class="section-title">My GitHub Activity</h2>
-        <div class="github-graph">
-            <iframe
-                src="https://ghchart.rshah.org/SunilKotte"
-                                allowtransparency="true"
-                frameborder="0"
-                scrolling="no"
-                width="100%"
-                height="200"
-
-                frameborder="0"
-                scrolling="0"
-                width="100%"
-                height="200"
-                title="GitHub Contributions Graph">
-            </iframe>
-            <p style="text-align: center; margin-top: 10px;">View my GitHub contributions over the past year.</p>
+    <section class="section" id="github-activity">
+        <div class="container">
+          <h2 class="section-title text-center  link-light">My GitHub Activity</h2>
+          <div class="github-graph text-center">
+            <img
+              src="https://ghchart.rshah.org/SunilKotte"
+              alt="GitHub Activity Graph"
+              class="img-fluid"
+            />
+          </div>
+          <p class="text-center mt-3">View my GitHub contributions over the past year.</p>
         </div>
-    </section>
+      </section>
     
-    <!-- <section class="section" id="github-activity" data-aos="fade-up">
-        <h2 class="section-title">My GitHub Contributions (2025)</h2>
-        <div class="github-graph">
-            <img src="https://github-readme-activity-graph.cyclic.app/graph?username=SunilKotte&bg_color=0d1117&color=ffffff&line=1f6feb&point=f05454&area=true&theme=github-dark" alt="GitHub Contributions Graph" style="width: 100%; max-width: 900px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
-        </div>
-    </section> -->
-    
-    
-
     <!-- Contact Section -->
     <!-- <section class="section" id="contact">
         <video autoplay muted loop>
@@ -545,72 +258,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./typed.js"></script>
-
-    <!-- <script>
-
-        // Close the navbar after clicking a link
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            const navbarToggler = document.querySelector('.navbar-toggler');
-            const navbarCollapse = document.querySelector('.navbar-collapse');
-            
-
-            if (navbarCollapse.classList.toggle("show")) {
-                navbarToggler.classList.toggle("collapsed"); // Toggle the "collapsed" class to hide the navbar
-
-        
-            }
-        });
-    });
-        document.addEventListener("scroll", () => {
-    const navbar = document.querySelector(".navbar");
-    if (window.scrollY > 50) {
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
-    }
-});
-function openPopup(projectId) {
-    const popup = document.getElementById(`popup-${projectId}`);
-    popup.style.display = "flex";
-}
-
-function closePopup(projectId) {
-    const popup = document.getElementById(`popup-${projectId}`);
-    popup.style.display = "none";
-}
-
-        // Observer for fade-in sections
-        const fadeInSections = document.querySelectorAll(".fade-in-section");
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("fade-in-visible");
-                } else {
-                    entry.target.classList.remove("fade-in-visible");
-                }
-            });
-        });
-
-        fadeInSections.forEach((section) => {
-            observer.observe(section);
-        });
-
-        document.addEventListener("DOMContentLoaded", () => {
-    const options = {
-        strings: ["Full-Stack Developer"],
-        typeSpeed: 50,
-        backSpeed: 60,
-        loop: true,
-        showCursor: false,
-        cursorChar: "_",
-        smartBackspace: true,
-        backspacingDelay: 50,
-        startDelay: 1000,
-    };
-    new Typed("#typewriter", options);
-});
-    </script> -->
 </body>
 </html>
