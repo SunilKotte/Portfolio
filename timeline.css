@@ -174,12 +174,34 @@
         padding: 20px;
     }
 }
+@media (max-width: 1024px) {
+    .timeline-item {
+        margin-bottom: 40px;
+        width: 50%;
+    }
+    .hero-section {
+        padding-top: 25% !important;
+        height: 70vh;
+        padding-bottom: 20% !important;
+        }
+    
+    .timeline-item {
+        left: 0%; /* Adjust content closer to the center for larger screens */
+        text-align: right;
+    }
+    
+    .timeline-item {
+        left: 0%; /* Adjust content closer to the center for larger screens */
+        text-align: left;
+    }
+}
 
 @media (min-width: 1024px) {
     .timeline-item {
         margin-bottom: 40px;
         width: 50%;
     }
+    
     .timeline-item {
         left: 0%; /* Adjust content closer to the center for larger screens */
         text-align: right;
