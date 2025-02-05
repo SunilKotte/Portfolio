@@ -62,3 +62,9 @@
         };
         new Typed("#typewriter", options);
     });
+
+    AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        offset: 200,    // Trigger animation 200px into view
+    });
+    

@@ -7,11 +7,17 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Moon+Dance&family=Ephesis&family=Castoro+Titling&family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <!-- Material UI Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./timeline.css">
+    <link rel="stylesheet" href="./Skills.css">
+
     
 </head>
 <body>
@@ -41,17 +47,33 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section" id="hero">
-        <img src="./01.jpg" alt="Sunil Kotte">
-        <h1>Sunil Kotte</h1>
-        <!-- <p>Experienced Full-Stack Developer | Problem Solver | Innovator</p> -->
-        <p id="typewriter"></p>
-        <a href="#about" class="btn btn-primary mt-3">Explore My Work</a>
-    </header>
-        <br>
-        <br>
-        <br>
+    <section id="hero" class="hero-section"> 
+        <div class="container">
+        <!-- Particles Container -->
+        <div id="particles-js"></div>
+        <div class="row lg-4">
+            <div class="col-md-6 hero-overlay image  active">
+                <img src="./01.jpg" alt="Sunil Kotte">
+                <!-- <p id="typewriter"></p> -->
+                </div>
+                <div class=" col-md-6 hero-overlay ">
+                    
+                    <h1 class="welcome"> Hello, this is</h1><h1 class="test">Sunil Kotte</h1>
+                    <h3 class="tagline">Turning Complex Ideas into Seamless Digital Experiences!</h3>
+                   
+                </div>
+                <div class="col-md-6 hero-overlay  ">
+                    <a href="#about" class="btn btn-primary mt-3">Explore My Work</a>
+                </div>
+                
+                <div class="col-md-6 hero-overlay ">
+                   <span>   </span>
+                    <h1 class="roles" id="typewriter"></h1>
+                   
+                </div>
+        </div>
+        </div>
+    </section>
     <!-- About Section -->
     <section class="section" id="about">
         <video autoplay muted loop>
@@ -59,40 +81,75 @@
         </video>
         <div class="container fade-in-section">
             <h2 class="section-title  link-light">About Me</h2>
-            <p>I am an experienced Full-Stack Developer with over 4 years of expertise, including 2 years in a startup environment. Skilled in Node.js, React.js, and building scalable RESTful APIs, I am passionate about delivering secure, maintainable, and high-performance solutions. My work is driven by innovation and a strong commitment to optimizing application performance in FinTech industries.</p>
+            <p>
+                I’m a <strong>Full-Stack Developer</strong> passionate about building 
+                <strong>scalable, secure, and high-performance web applications</strong>. 
+                With expertise in <strong>JavaScript, React.js, Node.js, MongoDB, and AWS</strong>, 
+                I blend creativity with precision to craft seamless digital experiences.
+            </p>
+            <p>
+                I thrive on solving complex problems, optimizing workflows, and designing 
+                intuitive user interfaces. Constantly learning and exploring new technologies, 
+                I strive to build solutions that are <strong>efficient, innovative, and future-ready</strong>.
+            </p>
+            <p>
+                Curious about my journey and the projects I’ve worked on? Keep reading to explore my 
+                <strong>professional experience</strong>. 👇
+            </p>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section class="section bg-dark" id="experience">
-        <video autoplay muted loop>
-            <source src="background-experience.mp4" type="video/mp4">
-        </video>
-        <div class="container fade-in-section">
-            <h2 class="section-title link-light" >Professional Experience</h2>
+    <section id="experience" class="section bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title text-center text-primary">Professional Experience</h2>
             <div class="timeline">
-                <div class="timeline-item">
-                    <h4>Software Development Engineer (Backend)</h4>
-                    <h6>Channelsoft IT Services Pvt LTD | 2022/07 – 2023/08</h6>
-                    <ul>
-                        <li>Optimized backend performance for web applications, increasing session duration by 25%.</li>
-                        <li>Enhanced software reliability, achieving a 98% compliance rate for critical processes.</li>
-                        <li>Collaborated with teams to deliver scalable and innovative solutions.</li>
-                    </ul>
+                <div class="timeline-item w-100 " data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content right-content">
+                        <h4>Software Engineer</h4>
+                        <h6>One Community Global | <span>Currently work here </span></h6>
+                        <ul>
+                            <li><strong>Full-Stack Development & Optimization:</strong> Built and enhanced the <strong>Highest Good Network App</strong> using <strong>React.js, Node.js, Express.js, and MongoDB</strong>, improving performance, UI/UX, and scalability.</li>
+                            <li><strong>Collaboration & Agile Development:</strong> Worked with <strong>100+ developers</strong> using Slack and GitHub, contributing to Agile workflows, code reviews, debugging, and technical documentation to ensure high-quality software delivery.</li>
+                            <li><strong>Security & Best Practices:</strong> Implemented <strong>CI/CD pipelines, security protocols, and performance optimizations</strong>, ensuring a seamless and secure user experience in a live production environment.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h4>Full-Stack Developer</h4>
-                    <h6>ClusterIT Solutions Pvt LTD | 2020/12 – 2022/07</h6>
-                    <ul>
-                        <li><strong>Coordinate Health System Management</strong>: Improved UI performance and integrated APIs for a healthcare system.</li>
-                        <li><strong>Crypto Tracking</strong>: Built blockchain explorer UIs and reduced data retrieval time using Node.js and Web3JS.</li>
-                        <li><strong>Doctoral Healthcare Application</strong>: Streamlined microservice-based architecture, improving patient-physician interactions.</li>
-                    </ul>
+
+                <!-- Timeline Item 1 (Right-Aligned) -->
+                <div class="timeline-item w-100 " data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content left-content">
+                        <h4>Software Development Engineer (Backend)</h4>
+                        <h6>Channelsoft IT Services Pvt LTD | <span>2022/07 – 2023/08</span></h6>
+                        <ul>
+                            <li>Optimized backend performance for web applications, increasing session duration by 25%.</li>
+                            <li>Enhanced software reliability, achieving a 98% compliance rate for critical processes.</li>
+                            <li>Collaborated with teams to deliver scalable and innovative solutions.</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Timeline Item 2 (Left-Aligned) -->
+                <div class="timeline-item w-100 " data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content right-content">
+                        <h4>Full-Stack Developer</h4>
+                        <h6>ClusterIT Solutions Pvt LTD | <span>2020/12 – 2022/07</span></h6>
+                        <ul>
+                            <li><strong>Coordinate Health System Management:</strong> Improved UI performance and integrated APIs for a healthcare system.</li>
+                            <li><strong>Crypto Tracking:</strong> Built blockchain explorer UIs and reduced data retrieval time using Node.js and Web3JS.</li>
+                            <li><strong>Doctoral Healthcare Application:</strong> Streamlined microservice-based architecture, improving patient-physician interactions.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
+    
+    
     <!-- Projects Section -->
     <section class="section" id="projects">
         <video autoplay muted loop>
@@ -111,15 +168,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-4">
-                    <div class="card project-card">
-                        <img src="project1-thumbnail.jpg" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Coordinate Health System Management</h5>
-                            <p>Improved load times by 30% and integrated secure APIs.</p>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="col-md-4">
                     <div class="card project-card" onclick="openPopup('project2')">
                         <!-- <img src="project2-thumbnail.jpg" alt="Project 2"> -->
@@ -178,34 +226,114 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="section bg-dark" id="skills">
-        <video autoplay muted loop>
-            <source src="background-skills.mp4" type="video/mp4">
-        </video>
-        <div class="container fade-in-section">
-            <h2 class="section-title link-light">Skills</h2>
-            <div class="row">
+    <section id="skills" class="section bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title text-center text-primary">Technical Skills</h2>
+            <div class="row g-4">
+                
+                <!-- Cloud & Serverless Technologies -->
                 <div class="col-md-4">
-                    <h4>Programming Languages</h4>
-                    <ul>
-                        <li>JavaScript, TypeScript, Node.js, Python</li>
-                    </ul>
+                    <div class="skill-box">
+                        <i class="material-icons">cloud</i>
+                        <h4>Cloud & Serverless Technologies</h4>
+                        <p>AWS (S3, Lambda, IAM, EC2), Google Cloud, Azure, Serverless Framework</p>
+                    </div>
                 </div>
+    
+                <!-- DevOps & CI/CD -->
                 <div class="col-md-4">
-                    <h4>Frameworks & Libraries</h4>
-                    <ul>
-                        <li>ReactJS, NextJS, Web3JS, Bootstrap</li>
-                    </ul>
+                    <div class="skill-box">
+                        <i class="material-icons">build</i>
+                        <h4>DevOps & CI/CD</h4>
+                        <p>CI/CD: GitHub Actions, Jenkins, Docker, Kubernetes, Terraform, Ansible</p>
+                    </div>
                 </div>
+    
+                <!-- Security & Authentication -->
                 <div class="col-md-4">
-                    <h4>Databases</h4>
-                    <ul>
-                        <li>MongoDB, MySQL, NoSQL</li>
-                    </ul>
+                    <div class="skill-box">
+                        <i class="material-icons">security</i>
+                        <h4>Security & Authentication</h4>
+                        <p>OWASP, JWT, Encryption, Vulnerability Assessment, OAuth, Passport.js, OpenID Connect</p>
+                    </div>
                 </div>
+    
+                <!-- API Design & Architecture -->
+                <div class="col-md-4">
+                    <div class="skill-box">
+                        <i class="material-icons">devices</i>
+                        <h4>API Design & Architecture</h4>
+                        <p>RESTful APIs, GraphQL, WebSockets, Microservices, Event-Driven Architecture</p>
+                    </div>
+                </div>
+    
+                <!-- Testing & Automation -->
+                <div class="col-md-4">
+                    <div class="skill-box">
+                        <i class="material-icons">check_circle</i>
+                        <h4>Testing & Automation</h4>
+                        <p>Jest, Mocha, Cypress, Test-Driven Development (TDD), Automation</p>
+                    </div>
+                </div>
+    
+                <!-- Performance Optimization & Monitoring -->
+                <div class="col-md-4">
+                    <div class="skill-box">
+                        <i class="material-icons">speed</i>
+                        <h4>Performance Optimization & Monitoring</h4>
+                        <p>Computational Complexity, Code Optimization, AWS CloudWatch, Prometheus, Grafana</p>
+                    </div>
+                </div>
+    
+                <!-- Agile & Collaboration -->
+                <div class="col-md-4">
+                    <div class="skill-box">
+                        <i class="material-icons">people</i>
+                        <h4>Agile & Collaboration</h4>
+                        <p>Scrum, Kanban, Collaboration, Effective Communication, Problem-Solving, Adaptability</p>
+                    </div>
+                </div>
+    
+                <!-- Programming Languages -->
+                <div class="col-md-4">
+                    <div class="skill-box">
+                        <i class="material-icons">code</i>
+                        <h4>Programming Languages</h4>
+                        <p>JavaScript, TypeScript, Node.js, Python</p>
+                    </div>
+                </div>
+    
+                <!-- Frameworks & Libraries -->
+                <div class="col-md-4">
+                    <div class="skill-box">
+                        <i class="material-icons">build</i>
+                        <h4>Frameworks & Libraries</h4>
+                        <p>React.js, Next.js, Web3.js, jQuery, Bootstrap</p>
+                    </div>
+                </div>
+    
+                <!-- Databases -->
+                <div class="col-md-4">
+                    <div class="skill-box">
+                        <i class="material-icons">storage</i>
+                        <h4>Databases</h4>
+                        <p>MongoDB, MySQL, Microsoft SQL Server, NoSQL</p>
+                    </div>
+                </div>
+    
+                <!-- Version Control -->
+                <div class="col-md-4">
+                    <div class="skill-box">
+                        <i class="material-icons">sync</i>
+                        <h4>Version Control</h4>
+                        <p>Git, Bitbucket, GitKraken</p>
+                    </div>
+                </div>
+    
             </div>
         </div>
     </section>
+    
     <section class="section" id="github-activity">
         <div class="container">
           <h2 class="section-title text-center  link-light">My GitHub Activity</h2>
@@ -258,5 +386,62 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./typed.js"></script>
+    <script>
+    // Initialize Particles.js
+particlesJS('particles-js', {
+    particles: {
+        number: { value: 100, density: { enable: true, value_area: 1900 } },
+        color: { value: "#ffffff" },
+        shape: {
+            type: "cube",
+            stroke: { width: 0, color: "#000000" },
+            polygon: { nb_sides: 5 },
+        },
+        opacity: {
+            value: 0.5,
+            random: false,
+            anim: { enable: false, speed: 0.5, opacity_min: 0.3, sync: false },
+        },
+        size: {
+            value: 5,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+        },
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+        },
+        move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 },
+        },
+    },
+    interactivity: {
+        detect_on: "canvas",
+        events: {
+            onhover: { enable: true, mode: "grab" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+        },
+        modes: {
+            grab: { distance: 140, line_linked: { opacity: 1 } },
+            bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 },
+        },
+    },
+    retina_detect: true,
+});
+</script>
 </body>
 </html>

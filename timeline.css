@@ -1,0 +1,227 @@
+
+/* time line section  */
+/* Timeline Container */
+.timeline {
+    position: relative;
+    margin: 50px 0;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Line in the middle */
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #1f6feb; /* Vertical timeline line */
+    z-index: 1;
+}
+
+/* Timeline Items */
+.timeline-item {
+
+    height: fit-content;
+    position: relative;
+    margin-bottom: 40px;
+    width:max-content;/* Half-width for alternating layout */
+    overflow: hidden;
+
+}
+
+.timeline-item.left {
+    left: 20%; /* Content closer to the line for left-aligned items */
+    text-align: right;
+}
+
+.timeline-item.right {
+    left: 20%; /* Content closer to the line for right-aligned items */
+    text-align: left;
+}
+
+/* Timeline Dot */
+.timeline-dot {
+    position: absolute;
+    top: 20px;
+    left: 50%; /* Perfectly centered on the line */
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: #1f6feb; /* Blue dot */
+    border-radius: 50%;
+    border: 3px solid #fff;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(31, 111, 235, 0.5);
+}
+
+/* Timeline Content */
+.timeline-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for dark theme */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    z-index: 2; /* Ensure content is above the timeline */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.timeline-content.left-content {
+    margin-right: calc(50% + 20px); /* Attach to the left side of the timeline */
+}
+
+.timeline-content.right-content {
+    margin-left: calc(50% + 20px); /* Attach to the right side of the timeline */
+}
+
+/* Hover Effects */
+.timeline-content:hover {
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    /* background: rgb(0,0,0);
+    background: linear-gradient(350deg, rgba(0,0,0,1) 0%, rgba(65,138,213,1) 41%, rgba(17,37,37,1) 86%); */
+    /* Change background to blue on hover */
+    color: #fff; /* Keep text white */
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0px 15px 20px rgba(4, 1, 39, 0.5); /* Glow effect */
+}
+
+.timeline-content:hover h4 {
+    color: #ffffff; /* Change title color to white */
+}
+
+.timeline-content:hover h6 {
+    color: #f0f0f0; /* Change subtitle color */
+}
+
+.timeline-content ul li:hover {
+    color: #ffffff; /* Brighten list items on hover */
+}
+
+/* Title and Description Styling */
+.timeline-content h4 {
+    font-size: 1.5rem;
+    color: #2b64b9; /* Highlight title */
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.timeline-content h6 {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.timeline-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.timeline-content ul li {
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px; /* Move timeline line to the left */
+    }
+
+    .timeline-dot {
+        left: 20px; /* Align dot with the timeline line */
+    }
+
+    .timeline-item {
+        width: 100%;
+    }
+    
+    .timeline-content {
+        width: 80%;
+        margin: 0 auto; /* Center content on smaller screens */
+        text-align: left; /* Align text to the left */
+        padding: 20px;
+    }
+
+    .timeline-content.right-content,
+    .timeline-content.left-content {
+        margin: 0 auto; /* Remove extra space on smaller screens */
+    }
+}
+
+@media (min-width: 1440px) {
+    .timeline-item {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .timeline-item {
+        left: 50%; /* Adjust content closer to the center for larger screens */
+        text-align: right;
+    }
+    #projects{
+        height: 45vh;
+    }
+    .timeline-item {
+        left: 50%; /* Adjust content closer to the center for larger screens */
+        text-align: left;
+    }
+    .timeline-content {
+        /* width: 80%; */
+        margin: 0 auto; /* Center content on smaller screens */
+        text-align: left; /* Align text to the left */
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .timeline-item {
+        margin-bottom: 40px;
+        width: 50%;
+    }
+    .timeline-item {
+        left: 0%; /* Adjust content closer to the center for larger screens */
+        text-align: right;
+    }
+    #projects{
+        height: 50vh;
+    }
+    .timeline-item {
+        left: 0%; /* Adjust content closer to the center for larger screens */
+        text-align: left;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero-section {
+    padding-top: 25% !important;
+    height: 70vh;
+    padding-bottom: 20% !important;
+    }
+
+    .timeline-dot {
+        left: 20px; /* Align dot with the timeline line */
+    }
+
+    .timeline-item {
+        width: 100%;
+    }
+
+    .timeline-content {
+        /* width: 80%; */
+        margin: 0 auto; /* Center content on smaller screens */
+        text-align: left; /* Align text to the left */
+        padding: 20px;
+    }
+    
+
+    .timeline-content.right-content,
+    .timeline-content.left-content {
+        margin: 0 auto; /* Remove extra space on smaller screens */
+    }
+}
+
+
+
+

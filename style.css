@@ -22,30 +22,61 @@ body {
     opacity: 0.4;
 }
 
+.roles{
+    font-family: "Castoro Titling", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.welcome{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Hero Section */
 .hero-section {
-    height: auto;
-    /* Reduced height for a compact look */
-    text-align: center;
+    position: static;
+    height: 50vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.8)), url('cover-photo.jpg') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -auto; /* Behind content */
+}
+
+.hero-overlay {
     position: relative;
-    background: linear-gradient(to bottom, rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.8)),
-        url('cover-photo.jpg') no-repeat center center/cover;
-    /* Cover photo */
-    padding-top: 70px;
+    z-index: 2; /* Above particles */
+    color: white;
+}
+
+.hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 80%;
+    border: 4px solid #466696;
+    margin-bottom: 20px;
+    
 }
 
 
-
-
 .hero-section img {
-    width: 150px;
+    width: 200px;
     /* Adjust the size */
-    height: 150px;
+    height: 200px;
     /* Make the height equal to the width */
-    border-radius: 50%;
+    border-radius: 105%;
     /* Ensures the image becomes circular */
     border: 4px solid #1f6feb;
     /* Adds the border */
@@ -58,21 +89,17 @@ body {
     /* Prevents overflow beyond the circle */
 }
 
-.hero-section h1 {
-    font-size: 4rem;
-    animation: zoomIn 1s;
+.test{
+    font-family: "Felipa", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.hero-section p {
-    font-size: 1.5rem;
-    animation: fadeIn 2s;
+.tagline{
+    font-family: "Moon Dance", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
-.hero-section a {
-    margin-top: 20px;
-    animation: slideInUp 2.5s;
-}
-
 @keyframes fadeIn {
     0% {
         opacity: 0;
