@@ -37,7 +37,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: static;
-    height: 50vh;
+    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
