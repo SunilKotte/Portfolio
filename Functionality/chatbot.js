@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-
     document.getElementById("send-btn").addEventListener("click", processUserInput);
 
     function processUserInput() {

@@ -159,7 +159,7 @@
                     <div class="card project-card" onclick="openPopup('project1')">
                         <!-- <img src="project1-thumbnail.jpg" alt="Project 1"> -->
                         <div class="card-body">
-                            <h3 class="card-title text-danger-emphasis ">Coordinate Health System Management</h3>
+                            <h3 class="card-title link-light ">Coordinate Health System Management</h3>
                             <p>Designed React.js UI components for patient and doctor dashboards, improving user engagement by 30%.</p>
                             <p>Built <strong>Node.js</strong> middleware with RESTful APIs to handle identity verification, OTP services, and JWT token authentication.</p>
                             <p>Reduced backend latency by 25% by optimizing <strong>MongoDB</strong> and <strong>CouchDB</strong> queries for real-time data retrieval.</p>
@@ -172,7 +172,7 @@
                     <div class="card project-card" onclick="openPopup('project2')">
                         <!-- <img src="project2-thumbnail.jpg" alt="Project 2"> -->
                         <div class="card-body">
-                            <h3 class="card-title text-danger-emphasis ">Crypto Tracking</h3>
+                            <h3 class="card-title link-light">Crypto Tracking</h3>
                             <p>Developed a <strong>Next.js frontend</strong> with dynamic data visualization, reducing page load times by <strong>20%</strong>.</p>
                             <p>Configured <strong>Bitcoin-core</strong> and <strong>Ethereum-core nodes</strong> to sync with the Node.js backend, improving data accuracy by <strong>95%</strong>.</p>
                             <p>Deployed the application on <strong>AWS EC2</strong> with automated scaling to handle <strong>10k+ daily requests</strong>.</p>
@@ -185,7 +185,7 @@
                     <div class="card project-card" onclick="openPopup('project3')">
                         <!-- <img src="project3-thumbnail.jpg" alt="Project 3"> -->
                         <div class="card-body">
-                            <h3 class="card-title text-danger-emphasis ">Doctoral Healthcare Application</h3>
+                            <h3 class="card-title link-light">Doctoral Healthcare Application</h3>
                             <p>Architected a <strong>Node.js and Express</strong> backend, ensuring seamless communication between patients and physicians.</p>
                             <p>Integrated <strong>AWS Lambda</strong>, reducing backend load and enhancing mobile app performance.</p>
                             <p>Designed a <strong>priority-based triage system</strong> that dynamically routes patient queries based on urgency.</p>                    
@@ -195,14 +195,21 @@
                     </div>
                 </div>
                 <!-- Custom Pop-Up -->
-                <div class="popup-overlay" id="popup-project1">
-                    <div class="popup-content">
+                <div class="popup-overlay row" id="popup-project1">
+                    <div class="popup-content align-content-end col-md-8">
                         <button class="popup-close" onclick="closePopup('project1')">&times;</button>
                         <!-- <img src="project1-thumbnail.jpg" alt="Project Image"> -->
                         <h3>Coordinate Health System Management</h3>
-                        <p><strong>Description:</strong> Improved UI performance and integrated secure APIs to streamline healthcare management.</p>
-                        <p><strong>Technologies:</strong> ReactJS, Node.js, MongoDB</p>
-                        <p><strong>Highlights:</strong> Improved load times by 30% and enhanced data security.</p>
+                        <h4><strong>Description:</strong></h4> <p>
+                            A blockchain-powered healthcare platform for issuing verifiable patient identities and secure health data transactions.
+                            By decentralizing identity management, the system reduced fraudulent activities by <strong>40%</strong> and streamlined data portability.
+                        </p>
+                        <p><strong>Tech Stack:</strong> React.js, Node.js, Golang, Hyperledger Fabric, Docker, MongoDB, CouchDB</p>
+                        <h5>Impact:</h5>
+                        <ul>
+                            <li>Achieved <strong>98%</strong> HIPAA compliance.</li>
+                            <li>Enabled <strong>50k+</strong> patients to securely access and share medical records.</li>
+                        </ul>
                         <button onclick="closePopup('project1')">Close</button>
                     </div>
                 </div>
@@ -211,9 +218,19 @@
                         <button class="popup-close" onclick="closePopup('project2')">&times;</button>
                         <!-- <img src="project2-thumbnail.jpg" alt="Project Image"> -->
                         <h3>Crypto Tracking</h3>
-            <p><strong>Description:</strong> A blockchain explorer to track cryptocurrency transactions.</p>
+                        <h4><strong>Description:</strong></h4>
+                        <p>
+                            This project is a <strong>real-time blockchain explorer</strong> designed to track <strong>Bitcoin and Ethereum transactions</strong> directly from their respective blockchain networks. 
+                            The system synchronizes with <strong>Bitcoin-core</strong> and <strong>Ethereum-core</strong> nodes, enabling users to search and monitor transactions, wallet balances, and block details in real-time.
+                        </p>
             <p><strong>Technologies:</strong> ReactJS,Next.js, Web3.js, Ethereum-core,Node.js, MongoDB</p>
-            <p><strong>Highlights:</strong> Enhanced data accuracy by 95% and reduced retrieval time by 25%.</p>     
+            <h5>Impact:</h5>
+            <ul>
+                <li><strong>Enabled real-time tracking of 1M+ transactions</strong> across <strong>Bitcoin & Ethereum networks</strong>.</li>
+                <li><strong>Reduced frontend load times by 20%</strong>, enhancing the user experience.</li>
+                <li><strong>Optimized blockchain query execution</strong>, improving search speeds for transaction data.</li>
+                <li><strong>Allowed seamless access to wallet history, block details, and transaction verification.</strong></li>
+            </ul>
                         <button onclick="closePopup('project2')">Close</button>
                     </div>
                 </div>
@@ -222,9 +239,18 @@
                         <button class="popup-close" onclick="closePopup('project3')">&times;</button>
                         <!-- <img src="project3-thumbnail.jpg" alt="Project Image"> -->
                         <h3>Doctoral Healthcare Application</h3>
-            <p><strong>Description:</strong> Scalable backend solutions for improved patient-physician interactions.</p>
-            <p><strong>Technologies:</strong> Node.js, AWS Lambda, MongoDB</p>
-            <p><strong>Highlights:</strong> Improved query prioritization and response times.</p>
+                        <h4>Description:</h4>  <p>
+                            Developed an intelligent healthcare application that optimizes patient-physician interactions by prioritizing queries based on urgency. 
+                            Leveraged <strong>Node.js</strong> and <strong>Express</strong> to build a scalable backend and integrated <strong>AWS Lambda</strong> for efficient serverless execution, improving system responsiveness.
+                            Designed a <strong>score-based query prioritization system</strong> that classifies patient requests into <strong>red, yellow, and green categories</strong>, ensuring timely attention by available doctors.
+                        </p>
+                        <p><strong>Tech Stack:</strong> Node.js, Express, AWS Lambda, MongoDB</p>
+                        <h5>Impact:</h5>
+                        <ul>
+                            <li><strong>Reduced query resolution time</strong> to just <strong>1 day</strong>, significantly enhancing patient engagement.</li>
+                            <li>Improved <strong>doctor response efficiency</strong>, ensuring high-priority cases receive immediate attention.</li>
+                            <li>Established a <strong>scalable and secure</strong> backend architecture, ensuring fast and reliable data transactions.</li>
+                        </ul>
         <button onclick="closePopup('project3')">Close</button>
                     </div>
                 </div>
@@ -384,9 +410,7 @@
             </div>
         </div>
     </section> -->
-    <!-- Chatbot Container -->
-<!-- Chatbot Container -->
-<!-- Chatbot Container -->
+
 <!-- Chatbot Container -->
 <div id="chatbot">
     <div id="chat-header">

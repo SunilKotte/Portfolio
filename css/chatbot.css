@@ -192,3 +192,68 @@
 #chatbot {
     display: none;
 }
+@media (max-width: 425px) {
+    /* Adjust chatbot container */
+    #chatbot {
+        width: 95%;
+        bottom: 15px;
+        right: 2.5%;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+
+    /* Header adjustments */
+    #chat-header {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .bot-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Chat body */
+    #chat-body {
+        max-height: 50vh;
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    /* User & bot messages */
+    .user, .bot {
+        max-width: 85%;
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+
+    /* Chat input area */
+    #chat-input-area {
+        padding: 6px;
+    }
+
+    #chat-input {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    #send-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    /* Chatbot icon (when minimized) */
+    #chatbot-icon {
+        width: 45px;
+        height: 45px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    /* Notification dot */
+    #notification-dot {
+        width: 8px;
+        height: 8px;
+    }
+}

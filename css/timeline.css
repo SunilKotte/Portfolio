@@ -242,6 +242,13 @@
     .timeline-content.left-content {
         margin: 0 auto; /* Remove extra space on smaller screens */
     }
+    .roles{
+        font-family: "Castoro Titling", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 20px;
+      padding-top: 3%;
+    }
 }
 
 
