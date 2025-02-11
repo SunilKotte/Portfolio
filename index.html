@@ -14,17 +14,16 @@
     <!-- Material UI Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./timeline.css">
-    <link rel="stylesheet" href="./Skills.css">
-
-    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/timeline.css">
+    <link rel="stylesheet" href="./css/Skills.css">
+    <link rel="stylesheet" href="./css/chatbot.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
         <div class="container">
-            <a class="navbar-brand" href="#">Sunil Kotte</a>
+            <a class="navbar-brand welcome nav-link" href="#">Sunil Kotte</a>
             <button
             class="navbar-toggler"
             type="button"
@@ -53,23 +52,21 @@
         <div id="particles-js"></div>
         <div class="row lg-4">
             <div class="col-md-6 hero-overlay image  active">
-                <img src="./01.jpg" alt="Sunil Kotte">
+                <img src="./Requirements/profilePic.jpg" alt="Sunil Kotte">
                 <!-- <p id="typewriter"></p> -->
                 </div>
                 <div class=" col-md-6 hero-overlay ">
                     
                     <h1 class="welcome"> Hello, this is</h1><h1 class="test">Sunil Kotte</h1>
                     <h3 class="tagline">Turning Complex Ideas into Seamless Digital Experiences!</h3>
-                   
                 </div>
                 <div class="col-md-6 hero-overlay  ">
                     <a href="#about" class="btn btn-primary mt-3">Explore My Work</a>
                 </div>
                 
                 <div class="col-md-6 hero-overlay ">
-                   <span>   </span>
+                    <span>   </span>
                     <h1 class="roles" id="typewriter"></h1>
-                   
                 </div>
         </div>
         </div>
@@ -77,7 +74,7 @@
     <!-- About Section -->
     <section class="section" id="about">
         <video autoplay muted loop>
-            <source src="background-about.mp4" type="video/mp4">
+            <!-- <source src="background-about.mp4" type="video/mp4"> -->
         </video>
         <div class="container fade-in-section">
             <h2 class="section-title  link-light">About Me</h2>
@@ -153,7 +150,7 @@
     <!-- Projects Section -->
     <section class="section" id="projects">
         <video autoplay muted loop>
-            <source src="background-projects.mp4" type="video/mp4">
+            <!-- <source src="background-projects.mp4" type="video/mp4"> -->
         </video>
         <div class="container fade-in-section">
             <h2 class="section-title  link-light">Projects</h2>
@@ -162,8 +159,11 @@
                     <div class="card project-card" onclick="openPopup('project1')">
                         <!-- <img src="project1-thumbnail.jpg" alt="Project 1"> -->
                         <div class="card-body">
-                            <h5 class="card-title">Coordinate Health System Management</h5>
-                            <p>Optimized load times by 30% and integrated secure APIs.</p>
+                            <h3 class="card-title text-danger-emphasis ">Coordinate Health System Management</h3>
+                            <p>Designed React.js UI components for patient and doctor dashboards, improving user engagement by 30%.</p>
+                            <p>Built <strong>Node.js</strong> middleware with RESTful APIs to handle identity verification, OTP services, and JWT token authentication.</p>
+                            <p>Reduced backend latency by 25% by optimizing <strong>MongoDB</strong> and <strong>CouchDB</strong> queries for real-time data retrieval.</p>
+                        
                             <link>Click to view details.</link>
                         </div>
                     </div>
@@ -172,8 +172,11 @@
                     <div class="card project-card" onclick="openPopup('project2')">
                         <!-- <img src="project2-thumbnail.jpg" alt="Project 2"> -->
                         <div class="card-body">
-                            <h5 class="card-title">Crypto Tracking</h5>
-                            <p>Enhanced data accuracy by 95% using blockchain interaction tools.</p>
+                            <h3 class="card-title text-danger-emphasis ">Crypto Tracking</h3>
+                            <p>Developed a <strong>Next.js frontend</strong> with dynamic data visualization, reducing page load times by <strong>20%</strong>.</p>
+                            <p>Configured <strong>Bitcoin-core</strong> and <strong>Ethereum-core nodes</strong> to sync with the Node.js backend, improving data accuracy by <strong>95%</strong>.</p>
+                            <p>Deployed the application on <strong>AWS EC2</strong> with automated scaling to handle <strong>10k+ daily requests</strong>.</p>
+                            <p>Improved data retrieval efficiency by <strong>30%</strong> through optimized MongoDB indexing.</p>
                             <link>Click to view details.</link>
                         </div>
                     </div>
@@ -182,8 +185,11 @@
                     <div class="card project-card" onclick="openPopup('project3')">
                         <!-- <img src="project3-thumbnail.jpg" alt="Project 3"> -->
                         <div class="card-body">
-                            <h5 class="card-title">Doctoral Healthcare Application</h5>
-                            <p>Developed scalable backend solutions, improving query prioritization.</p>
+                            <h3 class="card-title text-danger-emphasis ">Doctoral Healthcare Application</h3>
+                            <p>Architected a <strong>Node.js and Express</strong> backend, ensuring seamless communication between patients and physicians.</p>
+                            <p>Integrated <strong>AWS Lambda</strong>, reducing backend load and enhancing mobile app performance.</p>
+                            <p>Designed a <strong>priority-based triage system</strong> that dynamically routes patient queries based on urgency.</p>                    
+                            <p>Improved <strong>doctor response efficiency</strong>, ensuring high-priority cases receive immediate attention.</p>
                             <link>Click to view details.</link>
                         </div>
                     </div>
@@ -238,7 +244,7 @@
                     <div class="skill-box">
                         <i class="material-icons">cloud</i>
                         <h4>Cloud & Serverless Technologies</h4>
-                        <p>AWS (S3, Lambda, IAM, EC2), Google Cloud, Azure, Serverless Framework</p>
+                        <p>AWS (S3, Lambda, IAM, EC2), Azure, Serverless Framework</p>
                     </div>
                 </div>
     
@@ -247,7 +253,7 @@
                     <div class="skill-box">
                         <i class="material-icons">build</i>
                         <h4>DevOps & CI/CD</h4>
-                        <p>CI/CD: GitHub Actions, Jenkins, Docker, Kubernetes, Terraform, Ansible</p>
+                        <p>CI/CD: GitHub Actions, Jenkins, Docker</p>
                     </div>
                 </div>
     
@@ -256,7 +262,7 @@
                     <div class="skill-box">
                         <i class="material-icons">security</i>
                         <h4>Security & Authentication</h4>
-                        <p>OWASP, JWT, Encryption, Vulnerability Assessment, OAuth, Passport.js, OpenID Connect</p>
+                        <p> JWT, Encryption, Vulnerability Assessment, OAuth, Passport.js, OpenID Connect</p>
                     </div>
                 </div>
     
@@ -274,7 +280,7 @@
                     <div class="skill-box">
                         <i class="material-icons">check_circle</i>
                         <h4>Testing & Automation</h4>
-                        <p>Jest, Mocha, Cypress, Test-Driven Development (TDD), Automation</p>
+                        <p>Jest, Mocha, Test-Driven Development (TDD), Automation</p>
                     </div>
                 </div>
     
@@ -283,7 +289,7 @@
                     <div class="skill-box">
                         <i class="material-icons">speed</i>
                         <h4>Performance Optimization & Monitoring</h4>
-                        <p>Computational Complexity, Code Optimization, AWS CloudWatch, Prometheus, Grafana</p>
+                        <p>Computational Complexity, Code Optimization, AWS CloudWatch</p>
                     </div>
                 </div>
     
@@ -292,7 +298,7 @@
                     <div class="skill-box">
                         <i class="material-icons">people</i>
                         <h4>Agile & Collaboration</h4>
-                        <p>Scrum, Kanban, Collaboration, Effective Communication, Problem-Solving, Adaptability</p>
+                        <p>Scrum, Collaboration, Effective Communication, Problem-Solving, Adaptability</p>
                     </div>
                 </div>
     
@@ -338,17 +344,17 @@
     
     <section class="section" id="github-activity">
         <div class="container">
-          <h2 class="section-title text-center  link-light">My GitHub Activity</h2>
-          <div class="github-graph text-center">
+        <h2 class="section-title text-center  link-light">My GitHub Activity</h2>
+        <div class="github-graph text-center">
             <img
-              src="https://ghchart.rshah.org/SunilKotte"
-              alt="GitHub Activity Graph"
-              class="img-fluid"
+            src="https://ghchart.rshah.org/SunilKotte"
+            alt="GitHub Activity Graph"
+            class="img-fluid"
             />
-          </div>
-          <p class="text-center mt-3">View my GitHub contributions over the past year.</p>
         </div>
-      </section>
+        <p class="text-center mt-3">View my GitHub contributions over the past year.</p>
+        </div>
+    </section>
     
     <!-- Contact Section -->
     <!-- <section class="section" id="contact">
@@ -378,6 +384,31 @@
             </div>
         </div>
     </section> -->
+    <!-- Chatbot Container -->
+<!-- Chatbot Container -->
+<!-- Chatbot Container -->
+<!-- Chatbot Container -->
+<div id="chatbot">
+    <div id="chat-header">
+        <img src=".\Requirements\Chatbot.png" alt="Bot" class="bot-avatar">
+        <span>Ask me anything!</span>
+        <button id="close-chat">&times;</button>
+    </div>
+    <div id="chat-body"></div>
+    <div id="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Type a section name..." autocomplete="off">
+        <button id="send-btn"><i class="material-icons">send</i></button>
+    </div>
+</div>
+<div id="chatbot-icon">
+    <img src=".\Requirements\Chatbot.png" alt="Chatbot">
+    <span id="notification-dot"></span> <!-- 🔴 Notification Dot -->
+</div>
+
+<!-- Bot Profile (Visible when Chat is Minimized) -->
+<div id="chatbot-icon">
+    <img src=".\Requirements\Chatbot.png" alt="Chatbot">
+</div>
 
     <!-- Footer -->
     <footer>
@@ -387,7 +418,8 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="./typed.js"></script>
+    <script src="./Functionality/typed.js"></script>
+    <script src="./Functionality/chatbot.js"></script>
     <script>
     // Initialize Particles.js
 particlesJS('particles-js', {
@@ -444,6 +476,11 @@ particlesJS('particles-js', {
     },
     retina_detect: true,
 });
+
+()=>{AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        offset: 200,    // Trigger animation 200px into view
+    });}
 </script>
 </body>
 </html>
