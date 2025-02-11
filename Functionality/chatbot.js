@@ -48,9 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
             processUserInput();
         }
     });
-   
 
-    document.getElementById("send-btn").addEventListener("click", processUserInput());
+
+    document.getElementById("send-btn").addEventListener("click", processUserInput);
 
     function processUserInput() {
         const userMessage = chatInput.value.trim().toLowerCase();
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
             botAvatar.classList.remove("typing");
             appendMessage("bot", message);
             if (callback) callback();
-        }, 1300);
+        }, 1000);
     }
 
     /** 📌 Handle User Input Navigation */
@@ -108,6 +108,10 @@ document.addEventListener("DOMContentLoaded", function () {
             simulateTyping("Navigating to Home 🏠...", () => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
             });
+            return;
+        }
+        if(message === "hi"){
+            simulateTyping("Hello ! How you doing . . . . ?");
             return;
         }
         if (skillKeywords.some(keyword => message.includes(keyword))) {
