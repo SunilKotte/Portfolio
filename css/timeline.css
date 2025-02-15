@@ -1,4 +1,3 @@
-
 /* time line section  */
 /* Timeline Container */
 .timeline {
@@ -99,9 +98,9 @@
 }
 
 /* Title and Description Styling */
-.timeline-content h4 {
+.timeline-content h3 {
     font-size: 1.5rem;
-    color: #2b64b9; /* Highlight title */
+    color: #030303; /* Highlight title */
     margin-bottom: 10px;
     transition: color 0.3s ease;
 }
@@ -244,13 +243,9 @@
     }
     .roles{
         font-family: "Castoro Titling", serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 20px;
-      padding-top: 3%;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        padding-top: 3%;
     }
 }
-
-
-
-

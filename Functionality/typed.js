@@ -50,7 +50,7 @@
     
             document.addEventListener("DOMContentLoaded", () => {
         const options = {
-            strings: ["Full-Stack Developer"],
+            strings: ["Full-Stack Developer","NodeJs Developer","Backend Developer","REACT Developer"],
             typeSpeed: 50,
             backSpeed: 60,
             loop: true,
