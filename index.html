@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/Skills.css">
     <link rel="stylesheet" href="./css/chatbot.css">
     <link rel="stylesheet" href="./css/RGVB.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -41,7 +42,7 @@
                     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -384,34 +385,27 @@
     </section>
     
     <!-- Contact Section -->
-    <!-- <section class="section" id="contact">
-        <video autoplay muted loop>
-            <source src="background-contact.mp4" type="video/mp4">
-        </video>
-        <div class="container fade-in-section">
-            <h2 class="section-title">Contact</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Send</button>
-                    </form>
-                </div>
+    <section id="contact" class="section ">
+        <div class="container">
+            <div><h2 class="section-title text-center text-primary">Contact</h2></div>
+        <div class="row g-4">
+            <!-- Column 1: Reach Me via Email -->
+            <div class="col-md-4 text-center contact-box">
+                <i class="material-icons contact-icon">email</i>
+                <h4>Email Me</h4>
+                <h4><a href="mailto:sunilkotte0909@gmail.com" class="contact-link">➡️</a></h4>
+            </div>
+    
+            <!-- Column 2: LinkedIn -->
+            <div class="col-md-4 text-center contact-box">
+                <i class="material-icons contact-icon">business_center</i>
+                <h4>LinkedIn</h4>
+                <h4><a href="https://www.linkedin.com/in/sunil-kotte/" class="contact-link" target="_blank">Connect with me 😁</a></h4>
             </div>
         </div>
-    </section> -->
-
+    </div>
+    </section>
+    
 <!-- Chatbot Container -->
 <div id="chatbot">
     <div id="chat-header">
@@ -446,6 +440,7 @@
     <script src="./Functionality/typed.js"></script>
     <script src="./Functionality/chatbot.js"></script>
     <script src="./Functionality/RGVB.js"></script>
+    <script src="./Functionality/contact.js"></script>
     <script>
     // Initialize Particles.js
 particlesJS('particles-js', {

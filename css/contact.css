@@ -1,0 +1,112 @@
+/* Contact Section */
+#contact {
+    /* background: rgba(255, 255, 255, 0.1); */
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 3%;
+
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    cursor: pointer;
+}
+
+/* Contact Box */
+.contact-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding-top: 3%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 0px 4px 10px rgba(31, 111, 235, 0.4); */
+    /* margin: auto; */
+    flex-flow: column;
+}
+
+.contact-box:hover {
+    background: rgba(31, 111, 235, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Contact Icons */
+.contact-icon {
+    font-size: 40px;
+    color: #1f6feb;
+    margin-bottom: 10px;
+}
+
+/* Contact Links */
+.contact-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    color: #1f6feb;
+}
+
+/* Contact Form */
+.form-control {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(31, 111, 235, 0.5);
+}
+
+/* Send Button */
+.btn-primary {
+    background: #1f6feb;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: #0d47a1;
+    transform: scale(1.05);
+}
+
+@media (max-width: 425px) {
+    #contact {
+        padding-top: 10%;
+    }
+    .contact-box {
+    padding-top: 10%;}
+}
+
+
+@media (min-width: 768px) {
+    .contact-box {
+        margin: auto;}
+}
+
+@media (min-width: 992px) {
+    .contact-box {
+        margin: auto;}
+}
+
+@media (min-width: 1024px) {
+    .contact-box {
+        margin: auto;}
+}
+
+@media (min-width: 1200px) {
+    .contact-box {
+        margin: auto;}
+}
+
+@media (min-width: 1440px) {.contact-box {
+    margin: auto;}}
+
+
+
