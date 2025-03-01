@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "Experience",
             "Projects",
             "Skills",
+            "Contact"
         ];
         let index = 0;
 
